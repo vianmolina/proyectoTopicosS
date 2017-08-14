@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Electiva.Classwork.Training", "Ulatina.Electiva.Classwork.Training\Ulatina.Electiva.Classwork.Training.csproj", "{CA82C000-B6E7-4C55-8CB4-0A718C85DF81}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F} = {7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraMatrices.WcfOperaciones", "CalculadoraMatrices.WcfOperaciones\CalculadoraMatrices.WcfOperaciones.csproj", "{CE1A9E61-C94B-4B13-A147-FEEBDA264DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraMatrices.UnitTests", "CalculadoraMatrices.UnitTests\CalculadoraMatrices.UnitTests.csproj", "{060D5EB3-BC9B-439C-AC8F-29EBABC926E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Electiva.AdventureWorks.Model", "Ulatina.Electiva.AdventureWorks.Model\Ulatina.Electiva.AdventureWorks.Model.csproj", "{33AB216D-4BA0-4FB6-9069-829EDC3EB5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Electiva.AdventureWorks.Tests", "Ulatina.Electiva.AdventureWorks.Tests\Ulatina.Electiva.AdventureWorks.Tests.csproj", "{6513109C-20E9-45F1-B3CB-ED4AA4417106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Electiva.AdventureWorks.BL", "Ulatina.Electiva.AdventureWorks.BL\Ulatina.Electiva.AdventureWorks.BL.csproj", "{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.GenericRepository", "Ulatina.Topicos.GenericRepository\Ulatina.Topicos.GenericRepository.csproj", "{7B36133A-196C-4F92-9BA5-92BE270EEAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.GenericRepository.Model", "Ulatina.Topicos.GenericRepository.Model\Ulatina.Topicos.GenericRepository.Model.csproj", "{563D6032-A917-4BF8-9908-4FEDA0EC799E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Electiva.Classwork.UI", "Ulatina.Electiva.Classwork.UI\Ulatina.Electiva.Classwork.UI.csproj", "{E7B027B4-0FEF-4C30-AAA2-3F4A56BA228B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA82C000-B6E7-4C55-8CB4-0A718C85DF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA82C000-B6E7-4C55-8CB4-0A718C85DF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA82C000-B6E7-4C55-8CB4-0A718C85DF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA82C000-B6E7-4C55-8CB4-0A718C85DF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1A9E61-C94B-4B13-A147-FEEBDA264DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1A9E61-C94B-4B13-A147-FEEBDA264DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1A9E61-C94B-4B13-A147-FEEBDA264DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1A9E61-C94B-4B13-A147-FEEBDA264DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{060D5EB3-BC9B-439C-AC8F-29EBABC926E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060D5EB3-BC9B-439C-AC8F-29EBABC926E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060D5EB3-BC9B-439C-AC8F-29EBABC926E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060D5EB3-BC9B-439C-AC8F-29EBABC926E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AB216D-4BA0-4FB6-9069-829EDC3EB5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AB216D-4BA0-4FB6-9069-829EDC3EB5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AB216D-4BA0-4FB6-9069-829EDC3EB5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AB216D-4BA0-4FB6-9069-829EDC3EB5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6513109C-20E9-45F1-B3CB-ED4AA4417106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6513109C-20E9-45F1-B3CB-ED4AA4417106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6513109C-20E9-45F1-B3CB-ED4AA4417106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6513109C-20E9-45F1-B3CB-ED4AA4417106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6994D5-0B6B-4E11-A24C-7EDDE3791F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B36133A-196C-4F92-9BA5-92BE270EEAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B36133A-196C-4F92-9BA5-92BE270EEAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B36133A-196C-4F92-9BA5-92BE270EEAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B36133A-196C-4F92-9BA5-92BE270EEAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563D6032-A917-4BF8-9908-4FEDA0EC799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563D6032-A917-4BF8-9908-4FEDA0EC799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563D6032-A917-4BF8-9908-4FEDA0EC799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563D6032-A917-4BF8-9908-4FEDA0EC799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B027B4-0FEF-4C30-AAA2-3F4A56BA228B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B027B4-0FEF-4C30-AAA2-3F4A56BA228B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B027B4-0FEF-4C30-AAA2-3F4A56BA228B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B027B4-0FEF-4C30-AAA2-3F4A56BA228B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

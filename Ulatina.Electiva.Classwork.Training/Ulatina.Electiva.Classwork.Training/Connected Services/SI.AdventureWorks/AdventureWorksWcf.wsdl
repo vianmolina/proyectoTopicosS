@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdventureWorksWcf" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ulatina.Electiva.AdventureWorks.BL" />
+      <xsd:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Ulatina.Electiva.AdventureWorks.Model" />
+      <xsd:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Ulatina.Topicos.GenericRepository.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdventureWorksWcf_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ListarProductosParaViewModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProductosParaViewModel" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ListarProductosParaViewModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProductosParaViewModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ListarProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProductos" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ListarProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_BuscarProductoPorNumero_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarProductoPorNumero" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_BuscarProductoPorNumero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarProductoPorNumeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorNombreDeProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorNombreDeProducto" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorNombreDeProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorNombreDeProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorColor" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorPrecio_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorPrecio" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorPrecio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorPrecioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorTamano_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorTamano" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorTamano_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorTamanoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorNombreDeSubcategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorNombreDeSubcategoria" />
+  </wsdl:message>
+  <wsdl:message name="IAdventureWorksWcf_ConsultarPorNombreDeSubcategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPorNombreDeSubcategoriaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdventureWorksWcf">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/GetData" message="tns:IAdventureWorksWcf_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/GetDataResponse" message="tns:IAdventureWorksWcf_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/GetDataUsingDataContract" message="tns:IAdventureWorksWcf_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/GetDataUsingDataContractResponse" message="tns:IAdventureWorksWcf_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProductosParaViewModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ListarProductosParaViewModel" message="tns:IAdventureWorksWcf_ListarProductosParaViewModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ListarProductosParaViewModelResponse" message="tns:IAdventureWorksWcf_ListarProductosParaViewModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ListarProductos" message="tns:IAdventureWorksWcf_ListarProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ListarProductosResponse" message="tns:IAdventureWorksWcf_ListarProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProductoPorNumero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/BuscarProductoPorNumero" message="tns:IAdventureWorksWcf_BuscarProductoPorNumero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/BuscarProductoPorNumeroResponse" message="tns:IAdventureWorksWcf_BuscarProductoPorNumero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorNombreDeProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeProducto" message="tns:IAdventureWorksWcf_ConsultarPorNombreDeProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeProductoResponse" message="tns:IAdventureWorksWcf_ConsultarPorNombreDeProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorColor" message="tns:IAdventureWorksWcf_ConsultarPorColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorColorResponse" message="tns:IAdventureWorksWcf_ConsultarPorColor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorPrecio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorPrecio" message="tns:IAdventureWorksWcf_ConsultarPorPrecio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorPrecioResponse" message="tns:IAdventureWorksWcf_ConsultarPorPrecio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorTamano">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorTamano" message="tns:IAdventureWorksWcf_ConsultarPorTamano_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorTamanoResponse" message="tns:IAdventureWorksWcf_ConsultarPorTamano_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorNombreDeSubcategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeSubcategoria" message="tns:IAdventureWorksWcf_ConsultarPorNombreDeSubcategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeSubcategoriaResponse" message="tns:IAdventureWorksWcf_ConsultarPorNombreDeSubcategoria_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdventureWorksWcf" type="tns:IAdventureWorksWcf">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProductosParaViewModel">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ListarProductosParaViewModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProductos">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ListarProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProductoPorNumero">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/BuscarProductoPorNumero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorNombreDeProducto">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorColor">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ConsultarPorColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorPrecio">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ConsultarPorPrecio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorTamano">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ConsultarPorTamano" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPorNombreDeSubcategoria">
+      <soap:operation soapAction="http://tempuri.org/IAdventureWorksWcf/ConsultarPorNombreDeSubcategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdventureWorksWcf">
+    <wsdl:port name="BasicHttpBinding_IAdventureWorksWcf" binding="tns:BasicHttpBinding_IAdventureWorksWcf">
+      <soap:address location="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

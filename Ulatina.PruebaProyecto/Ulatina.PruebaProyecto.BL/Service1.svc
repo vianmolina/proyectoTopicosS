@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Ulatina.PruebaProyecto.BL.Service1" CodeBehind="Service1.svc.cs" %>

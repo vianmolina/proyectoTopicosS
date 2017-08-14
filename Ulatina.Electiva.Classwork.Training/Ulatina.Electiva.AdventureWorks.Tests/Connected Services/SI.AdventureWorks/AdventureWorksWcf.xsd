@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Ulatina.Topicos.GenericRepository.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ulatina.Topicos.GenericRepository.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Ulatina.Electiva.AdventureWorks.Model" />
+  <xs:complexType name="EntityOfProductcmA0XIUh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Ulatina.Topicos.GenericRepository.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Product" Namespace="http://schemas.datacontract.org/2004/07/Ulatina.Electiva.AdventureWorks.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ulatina.Topicos.GenericRepository.Model.IEntity._Id" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="_CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_CreatedDate" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Ulatina.Electiva.AdventureWorks.Model" minOccurs="0" name="_Id" nillable="true" type="q1:Product" />
+      <xs:element minOccurs="0" name="_ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Version" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="createdDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntityOfProductcmA0XIUh" nillable="true" type="tns:EntityOfProductcmA0XIUh" />
+</xs:schema>

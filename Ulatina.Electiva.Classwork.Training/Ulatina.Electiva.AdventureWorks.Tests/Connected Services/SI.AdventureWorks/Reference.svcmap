@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="27d946e0-2d06-43b6-9fb9-f64e55fcf4d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdventureWorksWcf.xsd" MetadataType="Schema" ID="03eba066-8355-4bf0-9cb5-ef42de8d9a2c" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd4" />
+    <MetadataFile FileName="AdventureWorksWcf1.xsd" MetadataType="Schema" ID="d453d8e2-3a8c-40bc-9373-71e8f05104af" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdventureWorksWcf2.xsd" MetadataType="Schema" ID="ebbb1750-f2c5-439c-957a-1e00067d5b69" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdventureWorksWcf.disco" MetadataType="Disco" ID="60bfdaac-fd0b-45ec-ba18-a6ec86083af5" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?disco" />
+    <MetadataFile FileName="AdventureWorksWcf.wsdl" MetadataType="Wsdl" ID="ee5a8303-e331-4c1a-87da-15529591cab0" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?wsdl" />
+    <MetadataFile FileName="AdventureWorksWcf3.xsd" MetadataType="Schema" ID="d84e398e-3003-4522-8076-d235d2e3eda9" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdventureWorksWcf4.xsd" MetadataType="Schema" ID="48b2a57c-3b3a-4896-bf0f-69341738f993" SourceId="1" SourceUrl="http://localhost:58512/Dominio/Servicios/AdventureWorksWcf.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
